@@ -40,7 +40,7 @@ const App = () => {
           />
          <Route path="/tasks"  element={<div><Navbar /><Sidebar /> <TaskManager /> </div>} />
          <Route path="/Vacation"   element={<div><Navbar /><Sidebar /> <Vacation /> </div>} />
-          <Route path="/profile"  element={<div><Navbar /><Sidebar /> <Profile /> </div>} />
+         ro
       </Routes>
       {/* <Sidebar />
       <Navbar/>

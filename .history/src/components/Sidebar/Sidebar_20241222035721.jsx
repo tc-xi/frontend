@@ -49,8 +49,8 @@ const Sidebar = () => {
           <img src={LogNa} alt = " Name" />
           </span>
               Profile
+              </div>
         </div>
-        </Link>
         <div className="menu-item">
           <span className="menu-icon">
             <img src={Logo} alt = "LogOut" />

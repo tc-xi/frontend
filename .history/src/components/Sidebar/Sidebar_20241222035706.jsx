@@ -43,14 +43,13 @@ const Sidebar = () => {
         </Link>
       </ul>
       <div className="sidebar-footer">
-        <Link to={"/profile"}>
+        
         <div className="menu-item">
           <span className="menu-icon">
           <img src={LogNa} alt = " Name" />
           </span>
-              Profile
+              Profile 
         </div>
-        </Link>
         <div className="menu-item">
           <span className="menu-icon">
             <img src={Logo} alt = "LogOut" />

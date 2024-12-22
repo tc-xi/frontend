@@ -7,7 +7,7 @@ import Agenda from "./components/Agenda/Agenda";
 import { BrowserRouter, Routes, Route } from "react-router";
 import Vacation from "./components/Vacation/vacation";
 import TaskManager from "./components/Task/Task";
-import Profile from "./components/Profile/Profile";
+i
 const getCalendarData = (year, month) => {
   const daysInMonth = new Date(year, month + 1, 0).getDate(); // Get the number of days in the month
   const data = [];
@@ -40,7 +40,6 @@ const App = () => {
           />
          <Route path="/tasks"  element={<div><Navbar /><Sidebar /> <TaskManager /> </div>} />
          <Route path="/Vacation"   element={<div><Navbar /><Sidebar /> <Vacation /> </div>} />
-          <Route path="/profile"  element={<div><Navbar /><Sidebar /> <Profile /> </div>} />
       </Routes>
       {/* <Sidebar />
       <Navbar/>
