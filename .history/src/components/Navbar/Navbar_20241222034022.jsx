@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import searchIcon from "../../../public/loop.png";
+import searchIcon from "../../../public/.jpg";
 import Img from "/XI.png";
 
 const Navbar = () => {
