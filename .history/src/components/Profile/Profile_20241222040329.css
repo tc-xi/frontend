@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    width: 700px;
+}
+.main , .pass{
+    display: flex;
+    justify-content: space-around;
+    width: 100;
+}
