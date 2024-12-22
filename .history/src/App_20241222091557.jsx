@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Login from "./components/Login/Login";
-import Sidebar from "./components/EmployeeSideBar/Sidebar";
+import Sidebar from "./components/Sidebar/Sidebar";
 import Navbar from "./components/Navbar/Navbar";
 import Agenda from "./components/Agenda/Agenda";
 import { BrowserRouter, Routes, Route } from "react-router";

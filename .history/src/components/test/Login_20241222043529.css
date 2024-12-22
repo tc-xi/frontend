@@ -1,0 +1,148 @@
+/* Login Card */
+.app-container{
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.login-card {
+    background-color: #0d1128; /* Dark blue */
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Logo */
+  .login-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  /* Titles */
+  .welcome-text {
+    font-size: 18px;
+    color: #ffb300; /* Bright orange */
+    margin: 0;
+    margin-right: 8px;
+  }
+  
+  .company-name {
+    font-size: 18px;
+    color: #ffffff;
+    
+    font-weight: bold;
+  }
+  
+  /* Form Styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #444b6a;
+    border-radius: 8px;
+    background-color: #2a2e5e;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .input-field::placeholder {
+    color: #a5a9cb;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #a1a4bd;
+    font-size: 16px;
+  }
+  
+  /* Button Styling */
+  .login-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffb300;
+    color: #0d1128;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+
+  .login-button:hover {
+    background-color: #e6a000;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #a1a4bd;
+    justify-items: buttom;
+
+  }
+
+  .container{
+    background-color: #FCA311;
+
+  }
+
+  .text-yellow {
+    color: #FCA311;
+    
+  }
+  .text-welcome {
+    font-size: medium;
+    color: white;
+  }
+  .lockicon{
+    position :absolute;
+    top :0;
+    left :0px;
+    margin: 5px;
+  }
+
+  .usericon{
+    position :absolute;
+  pa
+
+
+  }
+
+  .eyelock{
+    position :absolute;
+    top :0;
+    right:0;
+    margin: 8px;
+    width : 30px;
+    height: 25px;
+    object-fit: contain;
+  }
+  
+  
+  
