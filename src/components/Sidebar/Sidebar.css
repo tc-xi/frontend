@@ -1,0 +1,77 @@
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #14213D;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0; /* Align to the left */
+  top: 0;
+}
+
+.sidebar-header {
+  padding: 15px 10px; 
+  font-size: 18px; 
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #14213D; 
+  background-color: #14213D; 
+  color:  #ffb300; 
+
+}
+
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px; /* Adjust space between header and menu */
+}
+
+.menu-item {
+  padding: 10px 20px; /* Adjust padding for better alignment */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.menu-item.profile {
+  scroll-padding-left: 10px; /* Adjust the padding as needed */
+}
+
+.menu-item:hover {
+  background-color: white; /* Change background color to white on hover */
+  color: #14213D; /* Change text color to match the sidebar background */
+}
+
+.menu-item.active {
+  background-color: #14213D;
+}
+
+.menu-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.sidebar-footer {
+  margin-top: auto; /* Push footer to the bottom */
+  border-top: 1px solid #14213D;
+  padding: 10px 0;
+}
+
+.sidebar-footer .menu-item:hover {
+  background-color: white; /* Change footer buttons' background on hover */
+  color: #14213D; /* Change text color to match the sidebar background */
+}
+.menu-item:hover img {
+  filter: invert(0.5) sepia(1) saturate(3) hue-rotate(180deg);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}

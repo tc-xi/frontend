@@ -28,7 +28,7 @@ const App = () => {
          <Route path="/calendar" 
           element={
           <div>
-            <Navbar />
+                  <Navbar />
             <Sidebar /> 
             <Agenda
       initialYear={2024}

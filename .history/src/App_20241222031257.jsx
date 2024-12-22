@@ -4,6 +4,8 @@ import Login from "./components/test/Login";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Navbar from "./components/Navbar/Navbar";
 import Agenda from "./components/Agenda/Agenda";
+import Task from "./components/Task/Task";
+
 import { BrowserRouter, Routes, Route } from "react-router";
 import Vacation from "./components/Vacation/vacation";
 import TaskManager from "./components/Task/Task";
@@ -28,7 +30,7 @@ const App = () => {
          <Route path="/calendar" 
           element={
           <div>
-            <Navbar />
+                  <Navbar />
             <Sidebar /> 
             <Agenda
       initialYear={2024}
@@ -38,7 +40,7 @@ const App = () => {
             </div>
             } 
           />
-         <Route path="/tasks"  element={<div><Navbar /><Sidebar /> <TaskManager /> </div>} />
+         <Route path="/task"  element={<div><Navbar /><Sidebar /> <TaskManager /> </div>} />
          <Route path="/Vacation"   element={<div><Navbar /><Sidebar /> <Vacation /> </div>} />
       </Routes>
       {/* <Sidebar />
