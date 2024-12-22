@@ -1,0 +1,80 @@
+.vacation-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: calc(100vh - 50px); /* Adjust height based on your navbar */
+  }
+  
+  .vacation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .vacation-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .request-history-btn {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .request-history-btn:hover {
+    background-color: #003399;
+  }
+  
+  .vacation-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .send-btn {
+    display: block;
+    width: 100%;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .send-btn:hover {
+    background-color: #003399;
+  }
+  

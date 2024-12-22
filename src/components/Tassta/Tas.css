@@ -1,0 +1,202 @@
+:root {
+  --primary-color: #1e90ff; /* Main brand color */
+  --secondary-color: #f8f9fa; /* Background */
+  --accent-color: #ff6f61; /* Accent or alert colors */
+  --text-color: #333; /* Primary text color */
+  --text-muted: #666; /* Muted text color */
+  --border-color: #e5e5e5; /* Border color */
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  --border-radius: 8px; /* Default border radius */
+  --font-family: 'Roboto', sans-serif; /* Default font */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Employee Details Grid Layout */
+.employee-details {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Employee List Styles */
+.employee-list {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-list__search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 14px;
+}
+
+.employee-list__names {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.employee-list__name {
+  padding: 12px 15px;
+  font-size: 16px;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.employee-list__name:hover,
+.employee-list__name--active {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Employee Information Section */
+.employee-info {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.employee-info__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.employee-info__photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  box-shadow: var(--box-shadow);
+}
+
+.employee-info__name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.employee-info__role {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Task Section */
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.task__title {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.task__description {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.task__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.task__footer span {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.task__status {
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+}
+
+/* Chart Section */
+.employee-chart {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-chart__title {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.employee-chart__description {
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.chart-placeholder {
+  height: 200px;
+  background: linear-gradient(45deg, #f5f5f5, #f0f0f0);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .employee-details {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .employee-list__name {
+    font-size: 14px;
+  }
+
+  .employee-info__name {
+    font-size: 1.3rem;
+  }
+}
